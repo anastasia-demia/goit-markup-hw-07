@@ -319,8 +319,7 @@ img {
   max-width: 1600px;
   margin: 0 auto;
 }
-
-.main-title {
+.banner-title {
   text-align: center;
   font-style: normal;
   font-weight: 900;
@@ -330,7 +329,6 @@ img {
   color: var(--white-color);
   margin: 0px 0px 30px;
 }
-
 .banner-button {
   font-style: normal;
   font-weight: 700;
@@ -437,7 +435,6 @@ img {
   text-align: center;
   padding: 30px 0px;
 }
-
 .team-item {
   display: flex;
   flex-direction: column;
@@ -450,8 +447,7 @@ img {
 .team-item:last-child {
   margin: 0%;
 }
-
-.names {
+.team-name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -459,8 +455,7 @@ img {
   line-height: 1.18;
   margin: 0px 0px 10px;
 }
-
-.positions {
+.team-position {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -471,13 +466,12 @@ img {
   margin-bottom: 16px;
 }
 
-.position-socs {
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-
-.socs-link {
+.socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -487,15 +481,14 @@ img {
   border-radius: 50%;
   transition: background-color var(--time-duration);
 }
-.socs-link:hover, .socs-link:focus {
+.socials-link:hover, .socials-link:focus {
   background-color: var(--main-color);
 }
-
-.socs-icon {
+.socials-icon {
   fill: #AFB1B8;
   transition: fill var(--time-duration);
 }
-.socs-link:hover .socs-icon, .socs-link:focus .socs-icon {
+.socials-link:hover .socials-icon, .socials-link:focus .socials-icon {
   fill: var(--white-color);
 }
 
@@ -684,7 +677,6 @@ img {
   align-items: center;
   justify-content: center;
 }
-
 .modal-icon {
   fill: var(--black-color);
   transition: fill var(--time-duration);
@@ -693,13 +685,27 @@ img {
   fill: var(--main-color);
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.input {
+  margin-bottom: 10px;
 }
-
-.form-input {
+.input:last-of-type {
+  margin-bottom: 10px;
+}
+.input-wrap {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--text-color);
+  transition: fill var(--time-duration);
+}
+.input-form:hover + .input-icon, .input-form:focus + .input-icon {
+  fill: var(--main-color);
+}
+.input-form {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -713,19 +719,18 @@ img {
   border-radius: 4px;
   transition: border-color var(--time-duration);
 }
-.form-input.last {
+.input-form.last {
   height: 120px;
   resize: none;
   padding: 12px;
 }
-.form-input:hover, .form-input:focus {
+.input-form:hover, .input-form:focus {
   border-color: var(--main-color);
   outline-color: var(--main-color);
 }
-.form-input::placeholder {
+.input-form::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .input-name {
   font-style: normal;
   font-weight: 400;
@@ -737,34 +742,10 @@ img {
   color: var(--icogrey-color);
 }
 
-.input-field {
-  margin-bottom: 10px;
-}
-.input-field:last-of-type {
-  margin-bottom: 10px;
-}
-
-.input-wrap {
-  position: relative;
-}
-
-.input-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: var(--text-color);
-  transition: fill var(--time-duration);
-}
-.form-input:hover + .input-icon, .form-input:focus + .input-icon {
-  fill: var(--main-color);
-}
-
-.checkbox-field {
+.checkbox {
   display: flex;
   padding-left: 10px;
 }
-
 .checkbox-agreement {
   display: inline-block;
   display: flex;
@@ -790,27 +771,22 @@ img {
   justify-content: center;
   transition: background-color var(--time-duration), border-color var(--time-duration), background-image var(--time-duration);
 }
-
-.check-icon {
+.checkbox-icon {
   fill: transparent;
 }
-
-.checkbox:checked + .checkbox-agreement span {
-  background-color: var(--main-color);
-  border-color: var(--main-color);
-}
-
-.checkbox:checked + .checkbox-agreement .check-icon {
+.checkbox-field:checked + .checkbox-agreement .checkbox-icon {
   fill: var(--white-color);
 }
-
-.checkbox {
+.checkbox-field {
   display: none;
   transition: fill var(--time-duration);
 }
-
-.checkbox:active, .checkbox:focus, .checkbox:hover {
+.checkbox-field:active, .checkbox-field:focus, .checkbox-field:hover {
   fill: var(--main-color);
+}
+.checkbox-field:checked + .checkbox-agreement span {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
 }
 
 .send-button {
@@ -833,4 +809,10 @@ img {
   bottom: 14px;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
