@@ -1,0 +1,109 @@
+.nav, .menu-nav-list, .header, .contact-info-list {
+    display: flex;
+    flex-direction: row;
+}
+.menu-nav:hover, .contact-info:hover, .address:hover, .menu-nav:focus, .contact-info:focus, .address:focus {
+    color: var(--main-color);
+}
+.logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--main-color);
+    
+    padding: 25px 0px 25px;
+    margin-right: 100px;
+
+    display: inline-block;
+    transition: color var(--time-duration) ;
+    &:hover {
+        color: var(--text-color);
+    }
+    &.footer {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    &-black {
+        color: var(--black-color);
+    }
+}
+
+.color-white {
+    color: var(--white-color);
+}
+.menu-nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    
+    color: var(--text-color);
+
+    padding: 32px 0px 32px;
+    margin-right: 50px;
+    display: inline-block;
+    position: relative;
+
+    transition: color var(--time-duration);
+}
+.menu-nav.current {
+    color: var(--main-color);
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        border-bottom: 4px var(--main-color) solid;
+        border-radius: 2px; 
+    
+        position: absolute;
+        bottom: -2px;
+        margin: 0;
+    }
+}
+.contact-icon {
+    margin-right: 10px;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px 32px;
+
+    transition: color var(--time-duration);
+}
+.contact-link {
+    fill: var(--icogrey-color);
+}
+
+.contact-icon {
+    fill: var(--icogrey-color);
+    .contact-info:hover &, .contact-info:focus & {
+        fill: var(--main-color);
+    }
+}
+.contact-info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px; 
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+
+    color: var(--icogrey-color);   
+
+    margin-right: 0px;
+    &:last-child {
+        margin-left: 50px;
+    }
+}
+
+.header {
+    background-color: var(--white-color);
+    border-bottom: 1px solid #ECECEC;
+}
+.container.top {
+    display: flex;
+    justify-content: space-between;
+}
