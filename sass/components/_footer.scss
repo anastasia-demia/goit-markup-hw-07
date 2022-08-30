@@ -7,24 +7,31 @@
 .container.footer {
     display: flex;
 }
-.address-item:not(:last-child) {
-    margin-bottom: 9px;
-}
-.address-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    line-height: 1.71;
 
-    color: rgba(255, 255, 255, 0.6);
-
-    transition: color var(--time-duration);
-    &.--white {
-        color: var(--white-color);
-        &:hover, &:focus {
-            color: var(--main-color);
+.address {
+    border-color: transparent;
+    &:hover, &:focus {
+        color: var(--main-color);
+    }
+    &-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        line-height: 1.71;
+    
+        color: rgba(255, 255, 255, 0.6);
+    
+        transition: color var(--time-duration);
+        &.--white {
+            color: var(--white-color);
+            &:hover, &:focus {
+                color: var(--main-color);
+            }
         }
+    }
+    &-item:not(:last-child) {
+        margin-bottom: 9px;
     }
 }
 
