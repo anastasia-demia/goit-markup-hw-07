@@ -1,7 +1,7 @@
 .examples {
     background-color: var(--white-color);
     padding-bottom: 94px;
-    &-overlay {
+    &__overlay {
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -20,11 +20,11 @@
         width: 100%;
         bottom: 0;
     }
-}
-.example-item {
-    margin-right: 30px;
-    position: relative;
-    &:last-child {
-        margin: 0px;
+    &__item {
+        margin-right: 30px;
+        position: relative;
+        &:last-child {
+            margin: 0px;
+        }
     }
 }

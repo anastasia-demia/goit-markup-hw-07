@@ -35,7 +35,7 @@ img {
   height: auto;
 }
 
-.section-title {
+.section--title {
   display: flex;
   justify-content: center;
   font-style: normal;
@@ -56,7 +56,7 @@ img {
   padding-bottom: 94px;
 }
 
-.advantages-list, .examples-list, .team-list {
+.advantages__list, .examples__list, .team__list {
   display: flex;
   flex-direction: row;
   margin: 0%;
@@ -319,7 +319,7 @@ img {
   max-width: 1600px;
   margin: 0 auto;
 }
-.banner-title {
+.banner__title {
   text-align: center;
   font-style: normal;
   font-weight: 900;
@@ -329,7 +329,7 @@ img {
   color: var(--white-color);
   margin: 0px 0px 30px;
 }
-.banner-button {
+.banner__button {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -344,7 +344,7 @@ img {
   padding: 10px 20px;
   transition: color var(--time-duration), background-color var(--time-duration);
 }
-.banner-button:hover, .banner-button:focus {
+.banner__button:hover, .banner__button:focus {
   background-color: #F5F4FA;
   color: var(--text-color);
 }
@@ -352,7 +352,7 @@ img {
 .advantages {
   background-color: var(--white-color);
 }
-.advantages-title {
+.advantages__text {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -361,11 +361,11 @@ img {
   text-transform: uppercase;
   margin: 0%;
 }
-.advantages-item {
+.advantages__item {
   width: 270px;
   margin-right: 30px;
 }
-.advantages-bg {
+.advantages__bg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -375,7 +375,7 @@ img {
   border-radius: 4px;
   background-color: #F5F4FA;
 }
-.advantages-text {
+.advantages__paragraph {
   width: 270px;
   margin: 10px 0px 0px;
   font-style: normal;
@@ -386,7 +386,7 @@ img {
   color: var(--icogrey-color);
 }
 
-.advantages-hidden {
+.advantages__title--hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -403,7 +403,7 @@ img {
   background-color: var(--white-color);
   padding-bottom: 94px;
 }
-.examples-overlay {
+.examples__overlay {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -419,23 +419,22 @@ img {
   width: 100%;
   bottom: 0;
 }
-
-.example-item {
+.examples__item {
   margin-right: 30px;
   position: relative;
 }
-.example-item:last-child {
+.examples__item:last-child {
   margin: 0px;
 }
 
 .team {
   background-color: #F5F4FA;
 }
-.team-info {
+.team__information {
   text-align: center;
   padding: 30px 0px;
 }
-.team-item {
+.team__item {
   display: flex;
   flex-direction: column;
   margin-right: 30px;
@@ -444,10 +443,10 @@ img {
   background-color: var(--white-color);
   width: calc((100% - 90px) / 4);
 }
-.team-item:last-child {
+.team__item:last-child {
   margin: 0%;
 }
-.team-name {
+.team__name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -455,7 +454,7 @@ img {
   line-height: 1.18;
   margin: 0px 0px 10px;
 }
-.team-position {
+.team__position {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -471,7 +470,7 @@ img {
   justify-content: center;
   gap: 10px;
 }
-.socials-link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -481,28 +480,27 @@ img {
   border-radius: 50%;
   transition: background-color var(--time-duration);
 }
-.socials-link:hover, .socials-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--main-color);
 }
-.socials-icon {
+.socials__icon {
   fill: #AFB1B8;
   transition: fill var(--time-duration);
 }
-.socials-link:hover .socials-icon, .socials-link:focus .socials-icon {
+.socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
   fill: var(--white-color);
 }
 
 .companies {
   background-color: var(--white-color);
 }
-.companies-list {
+.companies__list {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 30px;
 }
-
-.company {
+.companies__item {
   box-sizing: border-box;
   width: 170px;
   height: 92px;
@@ -512,23 +510,22 @@ img {
   color: currentColor;
   transition: border-color var(--time-duration);
 }
-.company:hover, .company:focus {
+.companies__item:hover, .companies__item:focus {
   border-color: var(--main-color);
 }
-.company-link {
+.companies__icon {
+  fill: #AFB1B8;
+  transition: fill var(--time-duration);
+}
+.companies__link:hover .companies__icon, .companies__link:focus .companies__icon {
+  fill: var(--main-color);
+}
+.companies__link {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-}
-
-.company-icon {
-  fill: #AFB1B8;
-  transition: fill var(--time-duration);
-}
-.company-link:hover .company-icon, .company-link:focus .company-icon {
-  fill: var(--main-color);
 }
 
 .selection {
